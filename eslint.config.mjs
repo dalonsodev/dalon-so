@@ -22,6 +22,7 @@ export default defineConfig(
     files: ['**/*.astro'],
     languageOptions: {
       parserOptions: {
+        project: false,
         parser: tseslint.parser,
         tsconfigRootDir: import.meta.dirname
       }
