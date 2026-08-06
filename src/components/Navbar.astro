@@ -1,5 +1,7 @@
 ---
 import Container from './Container.astro'
+
+const linksBaseClass = 'text-sm text-text-secondary hover:text-text-primary transition-colors'
 ---
 
 <nav id="main-nav" class="bg-background py-4">
@@ -7,13 +9,13 @@ import Container from './Container.astro'
     <div class="flex items-center justify-between gap-4">
       <div>
         <!-- Hardcoded for now, will replace with actual brand logo -->
-        <a href="/">Dalonso</a>
+        <a href="/" class="text-text-primary text-sm font-semibold">Dalonso</a>
       </div>
       <ul class="flex items-center gap-4">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#stack">Stack</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projects" class={linksBaseClass}>Projects</a></li>
+        <li><a href="#about" class={linksBaseClass}>About</a></li>
+        <li><a href="#stack" class={linksBaseClass}>Stack</a></li>
+        <li><a href="#contact" class={linksBaseClass}>Contact</a></li>
       </ul>
     </div>
   </Container>
