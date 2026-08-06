@@ -1,7 +1,55 @@
 ---
+import Hero from '../components/Hero.astro'
 import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title="Dalonso" description="Frontend Engineer">
   <!-- sections go here -->
+  <Hero />
+
+  <!-- TEMP: DUMMY SCROLL CONTENT -->
+  <div
+    style="max-width: 800px; margin: 0 auto; padding: 4rem 2rem; font-family: sans-serif; line-height: 1.6;"
+  >
+    <h1>Test Page Title</h1>
+    <p>Scroll down to test the scroll behavior on your navbar...</p>
+
+    <div style="margin-top: 3rem; display: flex; flex-direction: column; gap: 2rem;">
+      <section style="padding: 3rem; background: #1e293b; border-radius: 8px;">
+        <h2>Section 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </section>
+
+      <section style="padding: 3rem; background: #1e293b; border-radius: 8px;">
+        <h2>Section 2</h2>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
+        </p>
+      </section>
+
+      <section style="padding: 3rem; background: #1e293b; border-radius: 8px;">
+        <h2>Section 3</h2>
+        <p>
+          Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et
+          commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.
+          Integer in mauris eu nibh euismod gravida.
+        </p>
+      </section>
+
+      <section style="padding: 3rem; background: #1e293b; border-radius: 8px;">
+        <h2>Section 4</h2>
+        <p>
+          Fusce dui lector, congue vel, tristique vitae, pretium et, tincidunt quis, nisl. Donec
+          imperdiet neque sit amet magna. Vestibulum ante ipsum primis in faucibus orci luctus et
+          ultrices posuere cubilia Curae.
+        </p>
+      </section>
+    </div>
+  </div>
 </Layout>
