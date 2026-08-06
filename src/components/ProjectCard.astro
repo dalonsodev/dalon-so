@@ -1,0 +1,36 @@
+---
+import type { Project } from '../data/projects'
+
+interface Props {
+  project: Project
+}
+
+const { project } = Astro.props
+const linkBaseClass =
+  'text-sm text-text-secondary hover:text-text-primary transition-colors inline-flex items-center gap-1'
+---
+
+<article class="border-border bg-surface flex flex-col gap-4 rounded-xl border p-6">
+  <h3 class="text-text-primary text-lg font-semibold">{project.name}</h3>
+  <p class="text-text-secondary text-sm">{project.description}</p>
+  <ul class="text-text-secondary flex list-inside list-disc flex-col gap-2 text-sm">
+    {project.signals.map((signal) => <li>{signal}</li>)}
+  </ul>
+  <div class="flex flex-wrap gap-2">
+    {
+      project.stack.map((chip) => (
+        <span class="bg-accent-subtle text-accent rounded-full px-2 py-0.5 font-mono text-xs">
+          {chip}
+        </span>
+      ))
+    }
+  </div>
+  <div class="flex items-center gap-2">
+    <a href={project.links.live} class={linkBaseClass} target="_blank" rel="noopener noreferrer"
+      >Live ↗︎</a
+    >
+    <a href={project.links.github} class={linkBaseClass} target="_blank" rel="noopener noreferrer"
+      >Github ↗︎</a
+    >
+  </div>
+</article>
