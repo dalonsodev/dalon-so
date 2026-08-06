@@ -24,7 +24,12 @@ const { title, description } = Astro.props
   </head>
 
   <body>
-    <Navbar />
-    <slot />
+    <header class="sticky top-0 z-50 w-full">
+      <Navbar />
+    </header>
+    <main>
+      <div id="nav-sentinel" aria-hidden="true" class="h-0 w-full"></div>
+      <slot />
+    </main>
   </body>
 </html>
