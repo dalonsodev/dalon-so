@@ -2,7 +2,14 @@
 import Container from './Container.astro'
 ---
 
-<nav class="sticky top-0 z-50 w-full">
+<div
+  id="nav-sentinel"
+  aria-hidden="true"
+  class="pointer-events-none absolute top-0 left-0 h-1 w-full"
+>
+</div>
+
+<nav id="main-nav" class="sticky top-0 z-50 w-full">
   <Container>
     <div class="flex items-center justify-between gap-4">
       <div>
@@ -18,3 +25,26 @@ import Container from './Container.astro'
     </div>
   </Container>
 </nav>
+
+<script>
+  function initNavObserver() {
+    const nav = document.getElementById('main-nav') as HTMLElement | null
+    const sentinel = document.getElementById('nav-sentinel') as HTMLElement | null
+
+    if (!nav || !sentinel) return
+
+    const observer = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
+      if (!entries[0].isIntersecting) {
+        nav.classList.add('nav-scrolled')
+      } else {
+        nav.classList.remove('nav-scrolled')
+      }
+    })
+
+    observer.observe(sentinel)
+  }
+
+  initNavObserver()
+
+  document.addEventListener('astro:page-load', initNavObserver)
+</script>
