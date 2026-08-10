@@ -21,6 +21,7 @@ const variantClasses: Record<'primary' | 'ghost', string> = {
   class={variantClasses[variant]}
   target={target}
   download={isDownload ? '' : undefined}
+  rel={target === '_blank' ? 'noopener noreferrer' : undefined}
 >
   <slot />
 </a>
