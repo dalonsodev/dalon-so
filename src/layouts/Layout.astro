@@ -18,10 +18,16 @@ const { title, description } = Astro.props
 <html lang="en">
   <Head title={title} description={description} />
   <body>
+    <a
+      href="#main-content"
+      class="bg-accent text-text-primary fixed top-16 left-8 z-100 translate-y-[-300%] rounded-md px-4 py-2 text-sm font-medium transition-transform focus:translate-y-0"
+    >
+      Skip to main content
+    </a>
     <header class="sticky top-0 z-50 w-full">
       <Navbar />
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
       <div id="nav-sentinel" aria-hidden="true" class="h-0 w-full"></div>
       <slot />
     </main>
