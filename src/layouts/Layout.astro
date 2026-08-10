@@ -3,6 +3,7 @@ import '@fontsource-variable/geist'
 import '@fontsource-variable/geist-mono'
 import '../styles/global.css'
 
+import Head from '../components/Head.astro'
 import Navbar from '../components/Navbar.astro'
 
 interface Props {
@@ -15,14 +16,7 @@ const { title, description } = Astro.props
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <meta name="description" content={description} />
-  </head>
-
+  <Head title={title} description={description} />
   <body>
     <header class="sticky top-0 z-50 w-full">
       <Navbar />
