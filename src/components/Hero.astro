@@ -3,7 +3,10 @@ import ButtonLink from './ButtonLink.astro'
 import Container from './Container.astro'
 ---
 
-<section id="hero" class="relative flex min-h-screen flex-col justify-center">
+<section
+  id="hero"
+  class="relative flex min-h-[calc(100vh-var(--navbar-height))] flex-col justify-center"
+>
   <Container>
     <div class="max-w-2xl">
       <span class="text-accent mb-4 block font-mono text-sm font-medium tracking-wide">
