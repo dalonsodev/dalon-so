@@ -10,7 +10,7 @@ const { href, variant = 'primary', isDownload, target } = Astro.props
 
 const variantClasses: Record<'primary' | 'ghost', string> = {
   primary:
-    'inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 font-medium text-text-primary transition-opacity hover:opacity-90',
+    'inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 font-medium text-background transition-opacity hover:opacity-90',
   ghost:
     'inline-flex items-center gap-2 rounded-lg border border-accent px-6 py-3 font-medium text-accent transition-colors hover:bg-accent-subtle'
 }

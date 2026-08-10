@@ -1,14 +1,14 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-background: oklch(97% 0.005 90);
+  --color-background: oklch(97% 0 0);
   --color-surface: oklch(100% 0 0);
-  --color-border: oklch(88% 0.005 90);
+  --color-border: oklch(88% 0 0);
   --color-text-primary: oklch(15% 0 0);
   --color-text-secondary: oklch(45% 0 0);
   --color-text-tertiary: oklch(65% 0 0);
-  --color-accent: oklch(68% 0.15 75);
-  --color-accent-subtle: oklch(95% 0.04 75);
+  --color-accent: oklch(51% 0.11 184.95);
+  --color-accent-subtle: oklch(94% 0.04 185);
 
   --font-sans: 'Geist', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'Geist Mono', ui-monospace, monospace;
