@@ -5,7 +5,6 @@ interface Links {
 
 export interface Project {
   name: string
-  slug: string
   description: string
   signals: string[]
   stack: string[]
@@ -15,7 +14,6 @@ export interface Project {
 export const projects: Project[] = [
   {
     name: 'DeFiScout',
-    slug: 'defiscout',
     description: 'LP position simulator built from the Uniswap V3 whitepaper — not the SDK.',
     signals: [
       'BigInt precision math from the Uniswap V3 whitepaper (not SDK)',
@@ -31,7 +29,6 @@ export const projects: Project[] = [
   },
   {
     name: 'SipMatch',
-    slug: 'sipmatch',
     description: 'Cocktail recommendation engine built from 11 years of bar management expertise.',
     signals: [
       'Discriminated union type system (AlcoholicCocktail | NonAlcoholicCocktail)',
