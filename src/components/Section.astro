@@ -8,7 +8,7 @@ interface Props {
 const { id } = Astro.props
 ---
 
-<section id={id} class="py-16">
+<section id={id} class="py-16" aria-labelledby={id + '-heading'}>
   <Container>
     <slot />
   </Container>
