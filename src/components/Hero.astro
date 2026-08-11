@@ -5,26 +5,29 @@ import Container from './Container.astro'
 
 <section
   id="hero"
-  class="relative flex min-h-[calc(100vh-var(--navbar-height))] flex-col justify-center"
+  class="relative flex min-h-[calc(100vh-var(--navbar-height))] flex-col justify-center overflow-x-clip"
 >
   <Container>
-    <div class="max-w-2xl">
+    <div class="max-w-171.5">
       <span class="text-accent mb-4 block font-mono text-sm font-medium tracking-wide">
         Dalonso
       </span>
 
-      <h1 class="text-text-primary mb-6 text-4xl leading-tight font-semibold sm:text-5xl">
-        Frontend Engineer — React · TypeScript · Product Systems
+      <h1 class="mb-4 text-4xl leading-tight sm:text-5xl">
+        <span class="text-text-secondary font-normal">
+          Some engineers need a product spec, a tech lead, and three standups a week to ship a
+          feature.
+        </span>
+        <span class="text-text-primary mt-2 block font-bold">I'm not <em>that</em> engineer.</span>
       </h1>
 
-      <p class="text-text-secondary mb-10 max-w-xl text-lg leading-relaxed">
-        Some engineers need a product spec, a tech lead, and three standups a week to ship a
-        feature. I'm not that engineer.
+      <p class="text-text-secondary mb-10 font-mono text-sm font-medium tracking-wide">
+        Frontend Engineer — React · TypeScript · Product Systems
       </p>
 
-      <div class="flex flex-wrap gap-4">
+      <div class="-mx-6 flex gap-4 overflow-x-auto px-6 pb-2.5 *:shrink-0">
         <ButtonLink href="#projects" variant="primary">See my work</ButtonLink>
-        <ButtonLink href="https://github.com/dalonsodev" variant="ghost">
+        <ButtonLink href="https://github.com/dalonsodev" variant="ghost" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -43,9 +46,9 @@ import Container from './Container.astro'
             <path d="M9 18c-4.51 2-5-2-7-2"></path>
           </svg>
           <span>GitHub</span>
-          <ButtonLink href="https://dalon.so/dalonso-resume.pdf" variant="ghost" isDownload>
-            Resume ↓
-          </ButtonLink>
+        </ButtonLink>
+        <ButtonLink href="https://dalon.so/dalonso-resume.pdf" variant="ghost" isDownload>
+          Resume ↓
         </ButtonLink>
       </div>
     </div>
