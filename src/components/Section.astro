@@ -3,12 +3,20 @@ import Container from './Container.astro'
 
 interface Props {
   id: string
+  noPaddingTop?: boolean
 }
 
-const { id } = Astro.props
+const { id, noPaddingTop = false } = Astro.props
 ---
 
-<section id={id} class="py-16" aria-labelledby={id + '-heading'}>
+<section
+  id={id}
+  class:list={[
+    noPaddingTop ? 'pb-16' : 'py-16',
+    noPaddingTop ? 'scroll-mt-[calc(var(--navbar-height)+4rem)]' : 'scroll-mt-(--navbar-height)'
+  ]}
+  aria-labelledby={id + '-heading'}
+>
   <Container>
     <slot />
   </Container>
