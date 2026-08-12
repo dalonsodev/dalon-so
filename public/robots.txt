@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://dalon.so/sitemap-index.xml
+Sitemap: https://dalon.so/sitemap-index.xml
