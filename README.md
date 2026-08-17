@@ -79,6 +79,6 @@ npm run format     # Prettier
 
 ## 📬 Contact
 
-**David Alonso** · [dalon.so](https://dalon.so) · [masdavidalonso@gmail.com](mailto:hello@dalon.so)
+**David Alonso** · [dalon.so](https://dalon.so) · [hello@dalon.so](mailto:hello@dalon.so)
 
 Available for remote contract work · Based in Spain 🇪🇸 · CET
