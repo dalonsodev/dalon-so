@@ -16,7 +16,7 @@ Built with **Astro + TypeScript + Tailwind CSS v4**, deployed on Netlify with CI
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology      | Purpose                                                               |
 | --------------- | --------------------------------------------------------------------- |
@@ -29,7 +29,7 @@ Built with **Astro + TypeScript + Tailwind CSS v4**, deployed on Netlify with CI
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 src/
@@ -62,7 +62,7 @@ public/
 
 ---
 
-## 🚀 Commands
+## Commands
 
 All commands run from the project root:
 
@@ -77,7 +77,7 @@ npm run format     # Prettier
 
 ---
 
-## 📬 Contact
+## Contact
 
 **David Alonso** · [dalon.so](https://dalon.so) · [hello@dalon.so](mailto:hello@dalon.so)
 
