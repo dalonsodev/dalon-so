@@ -81,4 +81,6 @@ npm run format     # Prettier
 
 **David Alonso** · [dalon.so](https://dalon.so) · [hello@dalon.so](mailto:hello@dalon.so)
 
-Available for remote contract work · Based in Spain 🇪🇸 · CET
+Open to remote contract work and in-house roles in Spain
+
+Based in Spain 🇪🇸 · working with international teams · CET
